@@ -1,4 +1,4 @@
-package com.baoyz.swipemenulistview;
+package com.wisdom.felicitas.swipemenu.listview;
 
 import android.content.Context;
 import android.database.DataSetObserver;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.WrapperListAdapter;
-import com.baoyz.swipemenulistview.SwipeMenuView.OnSwipeItemClickListener;
+import com.wisdom.felicitas.swipemenu.listview.SwipeMenuView.OnSwipeItemClickListener;
 
 /**
  * 

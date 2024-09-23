@@ -1,4 +1,4 @@
-package com.baoyz.swipemenulistview;
+package com.wisdom.felicitas.swipemenu.listview;
 
 
 /**

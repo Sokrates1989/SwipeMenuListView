@@ -16,7 +16,7 @@ A swipe menu for ListView.
 
 ```groovy
 dependencies {
-    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.wisdom.felicitas.swipemenu.listview:library:1.3.0'
 }
 ```
 
@@ -25,7 +25,7 @@ dependencies {
 * add SwipeMenuListView in layout xml
 
 ```xml
-<com.baoyz.swipemenulistview.SwipeMenuListView
+<com.wisdom.felicitas.swipemenu.listview.SwipeMenuListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

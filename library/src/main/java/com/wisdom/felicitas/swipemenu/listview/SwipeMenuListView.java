@@ -1,7 +1,7 @@
-package com.baoyz.swipemenulistview;
+package com.wisdom.felicitas.swipemenu.listview;
 
 import android.content.Context;
-import android.support.v4.view.MotionEventCompat;
+import androidx.core.view.MotionEventCompat;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;

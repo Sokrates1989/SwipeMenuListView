@@ -1,8 +1,8 @@
-package com.baoyz.swipemenulistview;
+package com.wisdom.felicitas.swipemenu.listview;
 
 import android.content.Context;
-import android.support.v4.view.GestureDetectorCompat;
-import android.support.v4.widget.ScrollerCompat;
+import androidx.core.view.GestureDetectorCompat;
+import android.widget.OverScroller;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
@@ -39,8 +39,8 @@ public class SwipeMenuLayout extends FrameLayout {
 	private boolean isFling;
 	private int MIN_FLING = dp2px(15);
 	private int MAX_VELOCITYX = -dp2px(500);
-	private ScrollerCompat mOpenScroller;
-	private ScrollerCompat mCloseScroller;
+	private OverScroller mOpenScroller;
+	private OverScroller mCloseScroller;
 	private int mBaseX;
 	private int position;
 	private Interpolator mCloseInterpolator;
@@ -114,19 +114,19 @@ public class SwipeMenuLayout extends FrameLayout {
 		mGestureDetector = new GestureDetectorCompat(getContext(),
 				mGestureListener);
 
-		// mScroller = ScrollerCompat.create(getContext(), new
+		// mScroller = OverScroller.create(getContext(), new
 		// BounceInterpolator());
 		if (mCloseInterpolator != null) {
-			mCloseScroller = ScrollerCompat.create(getContext(),
+			mCloseScroller = new OverScroller(getContext(),
 					mCloseInterpolator);
 		} else {
-			mCloseScroller = ScrollerCompat.create(getContext());
+			mCloseScroller = new OverScroller(getContext());
 		}
 		if (mOpenInterpolator != null) {
-			mOpenScroller = ScrollerCompat.create(getContext(),
+			mOpenScroller = new OverScroller(getContext(),
 					mOpenInterpolator);
 		} else {
-			mOpenScroller = ScrollerCompat.create(getContext());
+			mOpenScroller = new OverScroller(getContext());
 		}
 
 		LayoutParams contentParams = new LayoutParams(

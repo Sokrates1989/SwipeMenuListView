@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.baoyz.swipemenulistview.demo;
+package com.wisdom.felicitas.swipemenu.listview.demo;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -42,13 +42,11 @@ public class MainActivity extends Activity {
     }
 
     public void onClick(View v){
-        switch (v.getId()) {
-            case R.id.button1:
-                startActivity(new Intent(this, SimpleActivity.class));
-                break;
-            case R.id.button2:
-                startActivity(new Intent(this, DifferentMenuActivity.class));
-                break;
+        int id = v.getId();
+        if (id == R.id.button1) {
+            startActivity(new Intent(this, SimpleActivity.class));
+        } else if (id == R.id.button2) {
+            startActivity(new Intent(this, DifferentMenuActivity.class));
         }
     }
 }

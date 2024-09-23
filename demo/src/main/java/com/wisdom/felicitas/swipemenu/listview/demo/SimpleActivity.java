@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.baoyz.swipemenulistview.demo;
+package com.wisdom.felicitas.swipemenu.listview.demo;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -43,11 +43,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.baoyz.swipemenulistview.BaseSwipListAdapter;
-import com.baoyz.swipemenulistview.SwipeMenu;
-import com.baoyz.swipemenulistview.SwipeMenuCreator;
-import com.baoyz.swipemenulistview.SwipeMenuItem;
-import com.baoyz.swipemenulistview.SwipeMenuListView;
+import com.wisdom.felicitas.swipemenu.listview.BaseSwipListAdapter;
+import com.wisdom.felicitas.swipemenu.listview.SwipeMenu;
+import com.wisdom.felicitas.swipemenu.listview.SwipeMenuCreator;
+import com.wisdom.felicitas.swipemenu.listview.SwipeMenuItem;
+import com.wisdom.felicitas.swipemenu.listview.SwipeMenuListView;
 
 import java.util.List;
 
